@@ -50,7 +50,7 @@ Harap dicatat bahwa ini adalah **prototipe kasar** yang dibangun dalam waktu san
 Penasaran dengan konsep awal dan visi jangka panjang dari proyek ini?
 
 -   [**Link Demonstrasi Konsep**](URL_DEMO_VIDEO_ANDA) *(Ganti dengan link video demo KopiCup)*
--   [**Link Proposal Penelitian**](URL_PROPOSAL_PENELITIAN_ANDA) *(Ganti dengan link proposal penelitian)*
+-   [**Link Proposal Penelitian**](https://drive.google.com/file/d/1NZqYgtVRg7-vF63l5SIfrDKt72uqf2Bs/view?usp=sharing)
 
 ---
 
@@ -58,7 +58,7 @@ Penasaran dengan konsep awal dan visi jangka panjang dari proyek ini?
 
 Proyek ini tidak akan terwujud tanpa inspirasi dan dukungan. Terima kasih sebesar-besarnya kepada:
 
--   **Khadijah Rindang Maghriba**, yang telah mengizinkan ide brilian dari penelitiannya **"RANCANG BANGUN ALAT SORTIR BUAH KOPI PASCAPANEN BERDASARKAN TINGKAT KEMATANGAN"** untuk kami kembangkan lebih lanjut menggunakan ESP32-CAM.
+-   **Khadijah Rindang Maghriba**, yang telah mengizinkan ide brilian dari penelitiannya **"RANCANG BANGUN ALAT SORTIR BUAH KOPI PASCAPANEN BERDASARKAN TINGKAT KEMATANGAN BERBASIS SENSOR WARNA TCS34725"** untuk kami kembangkan lebih lanjut menggunakan ESP32-CAM.
 -   **Kompetisi OLIVIA**, yang telah memberikan kami kesempatan dan tekanan positif untuk belajar dan berkembang dalam suasana yang terasa seperti *hackathon*.
 
 ---
