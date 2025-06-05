@@ -1,6 +1,6 @@
 # KopiCup ☕️📸
 
-Prototipe alat penyortir biji kopi otomatis menggunakan **ESP32-CAM** untuk *computer vision* dan terintegrasi dengan platform **IoT**.
+Prototipe alat penyortir buah kopi otomatis menggunakan **ESP32-CAM** untuk *computer vision* dan terintegrasi dengan platform **IoT**.
 
 Dibuat dengan semangat belajar dalam waktu kurang dari 3 hari untuk kompetisi **OLIVIA**. Proyek ini adalah bukti bahwa pengalaman belajar bisa sama berharganya dengan kemenangan. Rasanya seperti *hackathon* pertama kami!
 
@@ -8,7 +8,7 @@ Dibuat dengan semangat belajar dalam waktu kurang dari 3 hari untuk kompetisi **
 
 ## ✨ Deskripsi Singkat
 
-**KopiCup** adalah sebuah sistem cerdas yang dirancang untuk menyortir buah kopi pascapanen berdasarkan tingkat kematangannya. Alat ini memanfaatkan kamera pada ESP32 untuk mengambil gambar buah kopi, kemudian menganalisisnya untuk memisahkan biji yang matang dan yang belum.
+**KopiCup** adalah sebuah sistem cerdas yang dirancang untuk menyortir buah kopi pascapanen berdasarkan tingkat kematangannya. Alat ini memanfaatkan kamera pada ESP32 untuk mengambil gambar buah kopi, kemudian menganalisisnya untuk memisahkan buah yang matang dan yang belum.
 
 -   **Hardware**: ESP32-CAM
 -   **Software**: Arduino IDE (`.ino`) & JavaScript (`.js`)
