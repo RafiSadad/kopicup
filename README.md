@@ -49,7 +49,7 @@ Harap dicatat bahwa ini adalah **prototipe kasar** yang dibangun dalam waktu san
 
 Penasaran dengan konsep awal dan visi jangka panjang dari proyek ini?
 
--   [**Link Demonstrasi Konsep**](URL_DEMO_VIDEO_ANDA) *(Ganti dengan link video demo KopiCup)*
+-   [**Link Demonstrasi Konsep**](https://drive.google.com/file/d/14pzZuIPAKDdxvyDuV8mQs93di3PBUnMw/view?usp=drive_link)
 -   [**Link Proposal Penelitian**](https://drive.google.com/file/d/1NZqYgtVRg7-vF63l5SIfrDKt72uqf2Bs/view?usp=sharing)
 
 ---
