@@ -1,0 +1,230 @@
+/* style.css - Tema Buah Kopi */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F3EE; /* Warna dasar krem/beige lembut */
+    color: #4A4A4A; /* Warna teks utama abu-abu tua */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 18px; /* Sudut lebih tumpul */
+    box-shadow: 0 10px 30px rgba(80, 60, 40, 0.1); /* Shadow dengan hint warna kopi */
+    border: 1px solid #E0DACC; /* Border halus */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #D7CCC8; /* Warna coklat muda untuk pemisah */
+}
+
+header h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #5D4037; /* Coklat tua untuk judul utama */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2.6em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.status-box {
+    font-size: 1em;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600; /* Lebih tebal */
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Status lebih tegas */
+    letter-spacing: 0.5px;
+}
+.status-box.connected {
+    color: #FFFFFF;
+    background-color: #4CAF50; /* Hijau segar untuk terhubung */
+    border-color: #388E3C;
+}
+.status-box.disconnected {
+    color: #FFFFFF;
+    background-color: #D32F2F; /* Merah matang untuk error */
+    border-color: #B71C1C;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: minmax(350px, 0.9fr) 1.1fr;
+    gap: 35px;
+}
+
+.panel {
+    padding: 30px;
+    background-color: #FFFDFB; /* Background panel lebih putih bersih */
+    border: 1px solid #EDEAE6;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.panel h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 0;
+    color: #6D4C41; /* Coklat sedang untuk judul panel */
+    border-bottom: 1px solid #D7CCC8;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 450px; /* Ukuran bisa disesuaikan */
+    height: 340px;   /* Rasio gambar */
+    margin: 0 auto 25px auto;
+    border: 2px solid #BCAAA4; /* Border warna coklat muda */
+    background-color: #3E2723; /* Background sangat gelap untuk kontras maksimal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#esp32Image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}
+/* Placeholder text styling if image src is empty or alt is shown */
+#esp32Image[alt]:not([src=""]) {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.info-box {
+    text-align: left;
+    font-size: 1.1em;
+    background-color: #FFF3E0; /* Kuning muda untuk info box */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #FFCC80; /* Border kuning */
+    box-shadow: inset 0 0 8px rgba(255, 183, 77, 0.2);
+}
+.info-box p {
+    margin: 8px 0;
+    color: #E65100; /* Oranye tua untuk teks info */
+}
+.info-box strong {
+    color: #BF360C; /* Oranye lebih gelap untuk label */
+    margin-right: 8px;
+}
+.info-box span {
+    font-weight: 600;
+    color: #D84315;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(100, 80, 60, 0.08);
+    border: 1px solid #E0E0E0;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    cursor: default; /* Atau pointer jika ada aksi klik */
+}
+.stat-item:hover {
+    transform: translateY(-4px) scale(1.02); /* Efek sedikit membesar */
+    box-shadow: 0 8px 20px rgba(100, 80, 60, 0.12);
+}
+
+.stat-item h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #795548; /* Coklat untuk judul stat */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.stat-item p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.6em;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Warna spesifik untuk setiap kategori statistik */
+.stat-item.matang p { color: #D32F2F; } /* Matang - Merah */
+.stat-item.mengkal p { color: #FFA000; } /* Mengkal - Oranye/Kuning */
+.stat-item.mentah p { color: #388E3C; } /* Mentah - Hijau */
+.stat-item.tua p { color: #5D4037; } /* Tua - Coklat Tua */
+
+.stat-item.total {
+    background-color: #EFEBE9; /* Background total sedikit beda */
+    border-color: #BCAAA4;
+}
+.stat-item.total h3 { color: #3E2723; }
+.stat-item.total p { color: #3E2723; }
+
+
+.chart-container { /* Jika kamu menggunakan chart nanti */
+    height: 360px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 15px rgba(100, 80, 60, 0.08);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #D7CCC8;
+    font-size: 0.9em;
+    color: #8D6E63; /* Coklat muda untuk footer */
+}
+
+/* Penyesuaian untuk layar kecil */
+@media (max-width: 900px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        width: auto;
+        margin: 20px;
+        padding: 25px;
+    }
+    header h1 { font-size: 2em; }
+    .panel h2 { font-size: 1.4em; }
+    .stat-item p { font-size: 2em; }
+    .image-container { height: auto; min-height: 280px; }
+}

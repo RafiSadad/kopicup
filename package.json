@@ -1,0 +1,19 @@
+{
+  "name": "olivia-dashboard-electron",
+  "version": "1.0.0",
+  "description": "Dashboard untuk penyortir biji kopi Olivia",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["olivia", "coffee", "sorter", "iot", "electron"],
+  "author": "Olivia Team",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0" 
+  },
+  "dependencies": {
+    "mqtt": "^5.3.4" 
+}
+}

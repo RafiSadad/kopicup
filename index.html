@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- CSP Disesuaikan untuk IP ESP32-CAM spesifik -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: http: https: http://172.20.10.4;">
+    <title>Penyortir Buah Kopi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Penyortir Buah Kopi</h1>
+            <div id="mqttStatus" class="status-box">Status MQTT: Mencoba terhubung...</div>
+        </header>
+
+        <main class="dashboard-layout">
+            <section id="live-feed" class="panel">
+                <h2>Tangkapan ESP32-CAM</h2>
+                <div class="image-container">
+                    <img id="esp32Image" src="" alt="Menunggu alamat IP ESP32-CAM...">
+                </div>
+                <div id="currentBeanInfo" class="info-box">
+                    <p><strong>Klasifikasi Saat Ini:</strong> <span id="currentClassification">-</span></p>
+                    <p><strong>Nilai HUE:</strong> <span id="currentHue">-</span></p>
+                </div>
+            </section>
+
+            <section id="statistics" class="panel">
+                <h2>Statistik Penyortiran</h2>
+                <div class="stats-grid">
+                    <div class="stat-item matang">
+                        <h3>Matang</h3>
+                        <p id="countMatang">0</p>
+                    </div>
+                    <div class="stat-item mengkal">
+                        <h3>Mengkal</h3>
+                        <p id="countMengkal">0</p>
+                    </div>
+                    <div class="stat-item mentah">
+                        <h3>Mentah</h3>
+                        <p id="countMentah">0</p>
+                    </div>
+                    <div class="stat-item tua">
+                        <h3>Tua</h3>
+                        <p id="countTua">0</p>
+                    </div>
+                    <div class="stat-item total">
+                        <h3>Total Diproses</h3>
+                        <p id="countTotal">0</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025 Olivia Team - Proyek Smart System Kopi</p>
+        </footer>
+    </div>
+    <script src="./renderer.js" defer></script>
+</body>
+</html>
